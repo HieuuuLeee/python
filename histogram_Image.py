@@ -21,3 +21,11 @@ for i,col in enumerate(color):
     plt.plot(histr,color = col)
     plt.xlim([0,256])
 plt.show()
+
+
+img = cv2.imread('image/322868_1100-1100x628.jpg')
+print(img.shape)
+cv2.imshow('asf', img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+#img = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
